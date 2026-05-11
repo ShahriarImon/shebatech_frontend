@@ -1,0 +1,77 @@
+.team {
+  height: 29.625rem;
+  width: 25.875rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 1.062rem;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  gap: 0.937rem;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: Urbanist;
+}
+.teamChild,
+.teamItem {
+  border-radius: 24px;
+  flex-shrink: 0;
+}
+.teamChild {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--col-2);
+  z-index: 0;
+}
+.teamItem {
+  width: 25.875rem;
+  height: 24.5rem;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.patrikFilderParent,
+.teamInner {
+  height: 3.125rem;
+  display: flex;
+  align-items: flex-start;
+}
+.teamInner {
+  /* width: 12.688rem; */
+  padding: 0 0 0 2.687rem;
+  box-sizing: border-box;
+  z-index: 2;
+  flex-shrink: 0;
+}
+.patrikFilderParent {
+  /* width: 10rem; */
+  flex-direction: column;
+  gap: 0.125rem;
+}
+.patrikFilder {
+  margin: 0;
+  width: auto;
+  height: 1.813rem;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+}
+.chiefOperationsOfficer {
+  /* width: 10rem; */
+  height: 1.188rem;
+  position: relative;
+  font-size: 1rem;
+  color: gray;
+  display: inline-block;
+}

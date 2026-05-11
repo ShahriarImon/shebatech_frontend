@@ -1,0 +1,83 @@
+.bottomFooter {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 1.25rem 0 1.625rem;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.bottomFooter,
+.outerFooter,
+.partnerSummary {
+  display: flex;
+  align-items: flex-start;
+}
+.outerFooter {
+  width: 59.625rem;
+  flex-direction: column;
+  gap: 6.25rem;
+  max-width: 100%;
+}
+.partnerSummary {
+  align-self: stretch;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 0.875rem;
+}
+.actionArea,
+.letsStartSomethingGreatToParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.actionArea {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 1.312rem 0 1.25rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+  font-family: Geist;
+}
+.letsStartSomethingGreatToParent {
+  flex-direction: column;
+  gap: 2.75rem;
+}
+.letsStartSomethingContainer {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 900;
+  font-family: inherit;
+}
+.great {
+  color: var(--Brand-Light);
+}
+.contactButton {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 1.25rem;
+}
+@media screen and (max-width: 1125px) {
+  .outerFooter {
+    gap: 3.125rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .outerFooter {
+    gap: 1.563rem;
+  }
+  .letsStartSomethingContainer {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .letsStartSomethingGreatToParent {
+    gap: 1.375rem;
+  }
+  .letsStartSomethingContainer {
+    font-size: 1.5rem;
+  }
+}

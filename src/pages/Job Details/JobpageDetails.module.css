@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  position: relative;
+  background-color: #26272e;
+  line-height: normal;
+  letter-spacing: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 4.8rem;
+}
+
+.container > * {
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* ========== TABLET (max-width: 768px) ========== */
+@media screen and (max-width: 768px) {
+  .container {
+    scroll-snap-type: none;
+    scroll-padding-top: 0;
+    height: auto;
+    overflow-y: visible;
+  }
+  .section {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+  }
+}

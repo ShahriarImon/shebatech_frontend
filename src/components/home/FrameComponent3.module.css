@@ -1,0 +1,90 @@
+.frameWrapper {
+  align-self: stretch;
+  padding: 0 0 1.206rem 0.062rem;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 4rem;
+  color: #fff;
+  font-family: "Cal Sans";
+  margin: 0 77px;
+  padding-top: 20px ;
+}
+.frameParent,
+.frameWrapper,
+.trustedByLeadingClientsParent {
+  display: flex;
+  align-items: flex-start;
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  gap: 4.875rem;
+  width: 100%;
+}
+.trustedByLeadingClientsParent {
+  align-self: stretch;
+  padding: 0 0.062rem 0 0;
+  box-sizing: border-box;
+  gap: 2.187rem;
+}
+.trustedByLeading {
+  margin: 0;
+  position: relative;
+  font-size: 3.9rem;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.headerWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.25rem 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: 1.125rem;
+  font-family: Urbanist;
+}
+.header {
+  position: relative;
+}
+@media screen and (max-width: 1250px) {
+  .trustedByLeadingClientsParent {
+    flex-wrap: wrap;
+  }
+}
+
+/* ========== TABLET (max-width: 768px) ========== */
+@media screen and (max-width: 768px) {
+  .frameWrapper {
+    margin: 0 20px;
+  }
+  .trustedByLeading {
+    font-size: 2.5rem;
+  }
+  .trustedByLeadingClientsParent {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .headerWrapper {
+    padding: 0;
+  }
+  .frameParent {
+    gap: 2.5rem;
+  }
+}
+
+/* ========== MOBILE (max-width: 480px) ========== */
+@media screen and (max-width: 480px) {
+  .frameWrapper {
+    margin: 0 16px;
+  }
+  .trustedByLeading {
+    font-size: 2rem;
+  }
+  .frameParent {
+    gap: 2rem;
+  }
+}

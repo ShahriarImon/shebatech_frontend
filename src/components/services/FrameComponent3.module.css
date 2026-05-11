@@ -1,0 +1,140 @@
+.frameGroup,
+.frameParent {
+  align-self: stretch;
+  flex-direction: column;
+  max-width: 100%;
+}
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 0 1.125rem;
+  box-sizing: border-box;
+  gap: 2.531rem;
+  margin-top: 1rem;
+  padding-top: 4.5rem;
+}
+.frameGroup {
+  gap: 1.187rem;
+}
+.frameContainer,
+.frameGroup,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+}
+.frameContainer {
+  align-self: stretch;
+  flex-direction: column;
+  gap: 0.687rem;
+  max-width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: Urbanist;
+}
+.rectangleParent {
+  height: 3.25rem;
+  border-radius: 38px;
+  border: 1px solid #4caf4f;
+  box-sizing: border-box;
+  padding: 0.625rem 2.562rem 0.562rem;
+}
+.frameChild,
+.howWeWorks {
+  position: relative;
+  flex-shrink: 0;
+}
+.frameChild {
+  height: 3.25rem;
+  width: 16.375rem;
+  border-radius: 38px;
+  border: 1px solid #4caf4f;
+  box-sizing: border-box;
+  display: none;
+}
+.howWeWorks {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  z-index: 1;
+}
+.headerParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.312rem;
+  max-width: 100%;
+  text-align: left;
+  font-size: 4.625rem;
+  font-family: "Cal Sans";
+}
+.header {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.headerWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.625rem 0 0;
+  box-sizing: border-box;
+  min-width: 25.063rem;
+  max-width: 100%;
+  font-size: 1.125rem;
+  font-family: Urbanist;
+}
+.header2 {
+  position: relative;
+}
+.rectangleGroup {
+  /* align-self: stretch; */
+  display: flex;
+  align-items: flex-start;
+  row-gap: 20px;
+  max-width: 100%;
+}
+.frameItem {
+  width: 39rem;
+  position: relative;
+  border-radius: 24px;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1350px) {
+  .headerParent,
+  .rectangleGroup {
+    flex-wrap: wrap;
+  }
+  .frameItem {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 800px) {
+  .frameParent {
+    gap: 1.25rem;
+  }
+  .headerParent {
+    gap: 1.125rem;
+  }
+  .header {
+    font-size: 3.688rem;
+  }
+  .headerWrapper {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    font-size: 2.75rem;
+  }
+}

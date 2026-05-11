@@ -1,0 +1,152 @@
+.ctaWrapper {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  /* margin-bottom: 5rem; */
+}
+
+.ctaCard {
+  width: 100%;
+  border-radius: 12px;
+  background-color: #0a1716;
+  border: 1px solid #41484a;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  padding: 3.5rem 4rem;
+  display: flex;
+  align-items: center;
+  min-height: 14rem;
+}
+
+.ctaBgIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.ctaContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ctaText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.readyToTransform {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.discoverTheRight {
+  font-size: 1.25rem;
+  color: #cdcdcd;
+  max-width: 32rem;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.requestDemoBtn,
+.contactUsBtn {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: Urbanist;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.requestDemoBtn {
+  background-color: #00ad4d;
+  color: #000;
+}
+
+.contactUsBtn {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #41484a;
+}
+
+.btnArrow {
+  width: 0.9rem;
+}
+
+.requestDemoBtn:hover {
+  background-color: #009642;
+}
+
+.contactUsBtn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .ctaCard {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .ctaCard {
+    padding: 2.5rem;
+  }
+  .ctaContent {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .ctaButtons {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .readyToTransform {
+    font-size: 1.625rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .readyToTransform {
+    font-size: 1.375rem;
+  }
+  .discoverTheRight {
+    font-size: 1rem;
+  }
+  .ctaButtons {
+    flex-direction: column;
+  }
+  .requestDemoBtn,
+  .contactUsBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}

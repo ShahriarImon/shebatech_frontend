@@ -1,0 +1,209 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+.frameChild,
+.frameParent,
+.slider {
+  height: 10.563rem;
+  flex-shrink: 0;
+}
+.frameParent {
+  width: max-content;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.925rem;
+  animation: scroll 15s linear infinite;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.frameChild {
+  width: 15.25rem;
+  position: relative;
+  z-index: 2;
+}
+.frameItem,
+.rectangleParent {
+  width: 15.188rem;
+  height: 10.563rem;
+}
+.rectangleParent {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.frameItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  background-color: var(--col-2);
+}
+.bracLogoWhite1Icon {
+  position: absolute;
+  top: 4.188rem;
+  left: 4.25rem;
+  width: 6.625rem;
+  height: 2.188rem;
+  object-fit: cover;
+}
+.frameInner,
+.rectangleGroup {
+  width: 15.188rem;
+  height: 10.563rem;
+}
+.rectangleGroup {
+  position: relative;
+  flex-shrink: 0;
+}
+.frameInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  background-color: var(--col-2);
+}
+.hsbcLogo20181Icon {
+  position: absolute;
+  top: 4.063rem;
+  left: 3.063rem;
+  width: 9.25rem;
+  height: 2.5rem;
+  object-fit: cover;
+}
+.frameChild2,
+.frameChild3,
+.groupIcon,
+.rectangleContainer {
+  height: 10.563rem;
+  width: 15.25rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.frameChild3,
+.rectangleContainer {
+  z-index: 7;
+}
+.rectangleContainer {
+  width: 15.188rem;
+  z-index: 6;
+}
+.rectangleDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  background-color: var(--col-2);
+  width: 15.188rem;
+  height: 10.563rem;
+}
+.bracLogoWhite1Icon2 {
+  position: absolute;
+  top: 4.188rem;
+  left: 4.25rem;
+  width: 6.625rem;
+  height: 2.188rem;
+  object-fit: cover;
+}
+.hsbcLogo20181Parent {
+  height: 10.563rem;
+  width: 15.188rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.hsbcLogo20181Icon2 {
+  position: absolute;
+  top: 4.063rem;
+  left: 3.063rem;
+  width: 9.25rem;
+  height: 2.5rem;
+  object-fit: cover;
+}
+.frameChild4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  background-color: rgba(28, 113, 66, 0.2);
+  width: 15.188rem;
+  height: 10.563rem;
+}
+.frameChild5,
+.frameChild6 {
+  height: 10.563rem;
+  width: 15.25rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* ========== TABLET (max-width: 768px) ========== */
+@media screen and (max-width: 768px) {
+  .slider,
+  .frameChild,
+  .frameParent {
+    height: 7rem;
+  }
+  .frameChild {
+    width: 10rem;
+  }
+  .frameItem,
+  .rectangleParent,
+  .frameInner,
+  .rectangleGroup,
+  .rectangleDiv,
+  .rectangleContainer,
+  .hsbcLogo20181Parent,
+  .frameChild4 {
+    width: 10rem;
+    height: 7rem;
+  }
+  .frameChild2,
+  .frameChild3,
+  .groupIcon,
+  .frameChild5,
+  .frameChild6 {
+    height: 7rem;
+    width: 10rem;
+  }
+}
+
+/* ========== MOBILE (max-width: 480px) ========== */
+@media screen and (max-width: 480px) {
+  .slider,
+  .frameChild,
+  .frameParent {
+    height: 5.5rem;
+  }
+  .frameChild {
+    width: 8rem;
+  }
+  .frameItem,
+  .rectangleParent,
+  .frameInner,
+  .rectangleGroup,
+  .rectangleDiv,
+  .rectangleContainer,
+  .hsbcLogo20181Parent,
+  .frameChild4 {
+    width: 8rem;
+    height: 5.5rem;
+  }
+  .frameChild2,
+  .frameChild3,
+  .groupIcon,
+  .frameChild5,
+  .frameChild6 {
+    height: 5.5rem;
+    width: 8rem;
+  }
+}

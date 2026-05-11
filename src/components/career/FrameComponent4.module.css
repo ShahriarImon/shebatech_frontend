@@ -1,0 +1,317 @@
+.careerInner,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.careerInner {
+  width: 88.188rem;
+  padding: 0 5rem;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 4.625rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  gap: 2.062rem;
+}
+.headerParent {
+  width: 71.188rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 100%;
+}
+.header {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.header2,
+.salaryPerks {
+  max-width: 100%;
+  font-family: Urbanist;
+}
+.header2 {
+  height: 2.75rem;
+  width: 36.688rem;
+  position: relative;
+  font-size: 1.125rem;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.salaryPerks {
+  align-self: stretch;
+  flex-direction: column;
+  gap: 1.062rem;
+  text-align: left;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.frameContainer,
+.frameGroup,
+.salaryPerks {
+  display: flex;
+  align-items: flex-start;
+}
+.frameGroup {
+  width: 70.813rem;
+  justify-content: space-between;
+  gap: 1.25rem;
+  max-width: 100%;
+}
+.frameContainer {
+  padding: 0 1rem 0 0;
+  gap: 0.875rem;
+}
+.ellipseParent {
+  height: 3.688rem;
+  width: 3.688rem;
+  position: relative;
+}
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--col-2);
+  width: 100%;
+  height: 100%;
+}
+.salaryDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.062rem 0 0;
+}
+.competitiveSalary {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.frameDiv {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+}
+.calendar2Icon,
+.desk1Icon {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  z-index: 1;
+}
+.desk1Icon {
+  top: 1.063rem;
+  left: 1.063rem;
+  width: 1.625rem;
+  height: 1.625rem;
+}
+.frameParent3,
+.frameParent4 {
+  display: flex;
+  align-items: flex-start;
+}
+.frameParent3 {
+  width: 67.563rem;
+  justify-content: space-between;
+  gap: 1.25rem;
+  max-width: 100%;
+}
+.frameParent4 {
+  padding: 0 5.625rem 0 0;
+  gap: 0.875rem;
+}
+.ellipseDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #263238;
+  width: 100%;
+  height: 100%;
+}
+.bonus1Icon {
+  position: absolute;
+  top: 0.938rem;
+  left: 0.938rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  z-index: 1;
+}
+.annualLeaveWrapper,
+.frameParent6 {
+  display: flex;
+  align-items: flex-start;
+}
+.frameParent6 {
+  width: 12.688rem;
+  gap: 0.875rem;
+}
+.annualLeaveWrapper {
+  flex: 1;
+  flex-direction: column;
+  padding: 1.062rem 0 0;
+}
+.annualLeave {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.frameParent7 {
+  width: 75.25rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.25rem;
+  max-width: 100%;
+}
+.frameParent10,
+.frameParent9 {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+}
+.frameParent9 {
+  padding: 0 2.75rem 0 0;
+}
+.frameParent10 {
+  width: 20.375rem;
+  max-width: 100%;
+}
+.refer7Icon {
+  position: absolute;
+  top: 1rem;
+  left: 1.125rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 1;
+}
+.knowledgeSharingSessionWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.062rem 0 0;
+  box-sizing: border-box;
+  min-width: 10.25rem;
+}
+.wellnessPerks {
+  align-self: stretch;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 1.062rem 4.125rem;
+  max-width: 100%;
+}
+.frameParent11,
+.wellnessDetails,
+.wellnessPerks {
+  display: flex;
+  align-items: flex-start;
+}
+.frameParent11 {
+  width: 23.313rem;
+  gap: 0.875rem;
+  max-width: 100%;
+}
+.wellnessDetails {
+  flex: 1;
+  flex-direction: column;
+  padding: 1.062rem 0 0;
+  box-sizing: border-box;
+  min-width: 12.188rem;
+}
+.improveUser6Icon {
+  position: absolute;
+  top: 1.125rem;
+  left: 1.063rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 1;
+}
+.trainingAndLearningMaterialWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.312rem 0 0;
+  box-sizing: border-box;
+  min-width: 12.188rem;
+}
+.trainingAndLearning {
+  position: relative;
+}
+@media screen and (max-width: 1350px) {
+  .careerInner {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    box-sizing: border-box;
+  }
+  .headerParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .frameGroup,
+  .frameParent3,
+  .frameParent7 {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .frameParent {
+    gap: 1rem;
+  }
+  .headerParent {
+    gap: 1.25rem;
+  }
+  .header {
+    font-size: 3.688rem;
+  }
+  .wellnessPerks {
+    gap: 2.063rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    font-size: 2.75rem;
+  }
+  .competitiveSalary {
+    font-size: 1rem;
+  }
+  .frameParent4 {
+    padding-right: 1.25rem;
+    box-sizing: border-box;
+  }
+  .annualLeave {
+    font-size: 1rem;
+  }
+  .frameParent10 {
+    flex-wrap: wrap;
+  }
+  .wellnessPerks {
+    gap: 1rem;
+  }
+  .frameParent11 {
+    flex-wrap: wrap;
+  }
+  .trainingAndLearning {
+    font-size: 1rem;
+  }
+}

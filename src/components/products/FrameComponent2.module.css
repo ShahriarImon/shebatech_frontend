@@ -1,0 +1,96 @@
+.frameParent,
+.headerParent {
+  align-self: stretch;
+  display: flex;
+  max-width: 100%;
+  text-align: left;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+.frameParent {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4.312rem;
+  font-size: 2.5rem;
+}
+.headerParent {
+  height: 6rem;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: 4.625rem;
+}
+.header,
+.header2 {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.header {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.header2 {
+  height: 2.75rem;
+  width: 50.813rem;
+  font-size: 1.125rem;
+  font-family: Urbanist;
+  flex-shrink: 0;
+}
+.frameGroup {
+  align-self: stretch;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.frameContainer,
+.frameGroup,
+.frameSection {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameContainer {
+  align-self: stretch;
+  gap: 1.718rem;
+}
+.frameSection {
+  width: 52.75rem;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 1.75rem;
+}
+@media screen and (max-width: 1350px) {
+  .frameContainer,
+  .headerParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .frameContainer {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(306px, 530px));
+  }
+}
+@media screen and (max-width: 800px) {
+  .frameParent {
+    gap: 2.125rem;
+  }
+  .headerParent {
+    gap: 1.25rem;
+  }
+  .header {
+    font-size: 3.688rem;
+  }
+  .frameContainer {
+    grid-template-columns: minmax(306px, 1fr);
+  }
+}
+@media screen and (max-width: 450px) {
+  .frameParent {
+    gap: 1.063rem;
+  }
+  .header {
+    font-size: 2.75rem;
+  }
+}

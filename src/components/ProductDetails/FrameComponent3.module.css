@@ -1,0 +1,174 @@
+.hrmsCaseStudyInner {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 5.125rem 0.687rem 4.937rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+
+.frameParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+}
+
+.firstHeaderParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 1.75rem;
+  gap: 1.5rem;
+}
+
+.header {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  line-height: 1.2;
+}
+
+.header2 {
+  font-size: 1.125rem;
+  font-family: Urbanist;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.frameWrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 0 2.187rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+}
+
+.rectangleParent {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 0rem;
+  background: linear-gradient(
+    90deg,
+    rgba(54, 55, 61, 0),
+    #36373d 51.44%,
+    rgba(54, 55, 61, 0)
+  );
+  border-radius: 12px;
+  /* gap: 2rem; */
+  flex-wrap: wrap;
+}
+
+.headerWrapper,
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 150px;
+}
+
+.header3 {
+  font-size: 1.125rem;
+  font-family: Urbanist;
+  line-height: 1.4;
+}
+
+.shebaGroup {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: block;
+  /* margin-top: 0.25rem; */
+}
+
+.divider {
+  width: 1px;
+  height: 7rem;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 173, 77, 0) 0%,
+    #00ad4d 50%,
+    rgba(0, 173, 77, 0) 100%
+  );
+}
+
+.companyItems,
+.companyHead3Parent {
+  align-self: stretch;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.companyHead1 {
+  flex: 1;
+  min-width: 300px;
+  max-width: 100%;
+  /* border-radius: 12px; */
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .rectangleParent {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hrmsCaseStudyInner {
+    padding: 0 2rem 1rem;
+    font-size: 2rem;
+  }
+
+  .rectangleParent {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+    background: linear-gradient(
+      180deg,
+      rgba(54, 55, 61, 0),
+      #36373d 51.44%,
+      rgba(54, 55, 61, 0)
+    );
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 173, 77, 0) 0%,
+      #00ad4d 50%,
+      rgba(0, 173, 77, 0) 100%
+    );
+  }
+
+  .headerWrapper,
+  .headerContainer {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hrmsCaseStudyInner {
+    padding: 0 1rem 1rem;
+  }
+
+  .header {
+    font-size: 1.75rem;
+  }
+}

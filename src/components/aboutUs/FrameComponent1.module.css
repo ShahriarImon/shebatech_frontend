@@ -1,0 +1,138 @@
+.frameChild,
+.rectangleParent {
+  border-radius: 24px;
+  box-sizing: border-box;
+}
+.rectangleParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1.937rem 0.875rem 3.062rem;
+  gap: 0.625rem;
+  min-width: 17.5rem;
+  max-width: 19.313rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  font-family: Urbanist;
+  min-height: 218px;
+  border: 1px solid transparent;
+  position: relative;
+  background:
+    linear-gradient(#26272e, #26272e) padding-box,
+    linear-gradient(to top, #34353b 15%, #00ad4d 50%, #34353b 85%) border-box;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.rectangleParent::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250%;
+  height: 250%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 60deg,
+    #00ad4d 90deg,
+    transparent 120deg,
+    transparent 240deg,
+    #00ad4d 270deg,
+    transparent 300deg,
+    transparent 360deg
+  );
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 0;
+  transition: none; /* Instant disappearance on unhover to prevent green shade */
+  z-index: 0;
+}
+
+/* Center mask to keep the background solid while the border rotates */
+.rectangleParent::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: #26272e;
+  border-radius: 23px;
+  opacity: 0;
+  transition: none; /* Mask disappears instantly on unhover to prevent green shade */
+  z-index: 0;
+}
+
+.rectangleParent:hover {
+  transform: translateY(-10px);
+  /* Hide the static border gradient on hover */
+  background: linear-gradient(#26272e, #26272e) padding-box, transparent border-box;
+}
+
+.rectangleParent:hover::before {
+  opacity: 1;
+  animation: rotate 4s linear infinite;
+  transition: opacity 0.3s ease-in-out; /* Smooth fade-in on hover */
+}
+
+.rectangleParent:hover::after {
+  opacity: 1;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.frameChild {
+  width: 19.313rem;
+  height: 14.375rem;
+  position: relative;
+  background:
+    #26272e padding-box,
+    linear-gradient(180deg, #34353b 12.02%, #00ad4d 48.08%, #313238 87.5%)
+      border-box;
+  border: 1px solid transparent;
+  display: none;
+  flex-shrink: 0;
+}
+.serviceName {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.theBeginning {
+  font-size: 1.25rem;
+}
+.header2 {
+  position: relative;
+  font-size: 1rem;
+  z-index: 1;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 450px) {
+  .serviceName {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    box-sizing: border-box;
+  }
+  .header {
+    font-size: 1rem;
+  }
+}

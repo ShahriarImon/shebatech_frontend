@@ -1,0 +1,54 @@
+.letsConnect,
+.letsConnectWrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.letsConnectWrapper {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 1.25rem 4.687rem 1.312rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+  font-family: Geist;
+}
+.letsConnect {
+  flex-direction: column;
+  gap: 2.937rem;
+}
+.letsStartSomethingContainer {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 900;
+  font-family: inherit;
+}
+.great {
+  color: var(--Brand-Light);
+}
+.contactButtonContainer {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 1.25rem;
+}
+@media screen and (max-width: 800px) {
+  .letsConnectWrapper {
+    padding-bottom: 3.063rem;
+    box-sizing: border-box;
+  }
+  .letsStartSomethingContainer {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .letsConnect {
+    gap: 1.438rem;
+  }
+  .letsStartSomethingContainer {
+    font-size: 1.5rem;
+  }
+}

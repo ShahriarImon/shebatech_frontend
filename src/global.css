@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Cal+Sans:ital,wght@0,400&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,600;0,800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  line-height: normal;
+  height: 100%;
+  overflow: hidden;
+}
+
+:root {
+  /* Figma Variables */
+
+  /* Color */
+  --Brand-Light: #80c342;
+  --col-2: #34373f;
+  --Text-Grey: #5c5c5c;
+
+  /* Common Style Variables */
+  font-size: 15px;
+  /* Gradients */
+  --icon-gra: linear-gradient(204.32deg, #00ad4d, #7fc241);
+  --overlay: linear-gradient(
+    180deg,
+    rgba(10, 33, 13, 0),
+    rgba(98, 101, 110, 0.85) 37.91%,
+    var(--col-2)
+  );
+
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}

@@ -1,0 +1,65 @@
+.frameParent {
+  width: 32.875rem;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-width: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: Urbanist;
+}
+.ellipseWrapper,
+.frameGroup,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+}
+.frameGroup {
+  gap: 1.312rem;
+}
+.ellipseWrapper {
+  flex-direction: column;
+  padding: 0.437rem 0 0;
+}
+.frameChild,
+.header {
+  position: relative;
+  z-index: 1;
+}
+.frameChild {
+  width: 0.938rem;
+  height: 0.938rem;
+  border-radius: 50%;
+  background-color: #4caf4f;
+}
+.header {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.headerWrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 0 0 2.25rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: 1.125rem;
+}
+.header2 {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.header3 {
+  font-size: 1.17rem;
+  margin-top: 3px;
+}
+@media screen and (max-width: 450px) {
+  .header {
+    font-size: 1.188rem;
+  }
+}

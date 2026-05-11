@@ -1,0 +1,166 @@
+.frameWrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 0.125rem 0 0.062rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  font-size: 3.188rem;
+  color: #4caf4f;
+  font-family: "Cal Sans";
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  gap: 2.393rem;
+  max-width: 100%;
+}
+.frameGroup,
+.frameParent,
+.headerWrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.frameGroup {
+  align-self: stretch;
+  flex-direction: column;
+  gap: 1.431rem;
+  max-width: 100%;
+  text-align: left;
+  font-size: 3rem;
+  color: #fff;
+  font-family: Urbanist;
+}
+.headerWrapper {
+  padding: 0 0.062rem;
+}
+.header {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+}
+.frameChild {
+  align-self: stretch;
+  height: 0.063rem;
+  position: relative;
+  border-top: 1px solid #383838;
+  box-sizing: border-box;
+}
+.frameContainer,
+.headerParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameContainer {
+  align-self: stretch;
+  padding: 0 0 0 0.125rem;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.headerParent {
+  flex: 1;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.header2 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.titleIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.568rem 0 0;
+}
+.arrowSquare2 {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.systemContainer,
+.systemContainerChild {
+  height: 37.688rem;
+  background-color: #06170d;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.systemContainer {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.875rem 15.062rem 31.687rem;
+  box-sizing: border-box;
+  gap: 3.625rem;
+}
+.systemContainerChild {
+  width: 79.875rem;
+  position: relative;
+  display: none;
+}
+.taskManagementSystemWrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 1.937rem 0 1.875rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.screensIcon,
+.taskManagementSystem {
+  position: relative;
+  max-width: 100%;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.taskManagementSystem {
+  margin: 0;
+  flex: 1;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+.screensIcon {
+  align-self: stretch;
+  height: 34.625rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+@media screen and (max-width: 750px) {
+  .header {
+    font-size: 2.375rem;
+  }
+  .headerParent {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+  .header2 {
+    font-size: 2.375rem;
+  }
+  .taskManagementSystem {
+    font-size: 2.563rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header,
+  .header2 {
+    font-size: 1.813rem;
+  }
+  .taskManagementSystem {
+    font-size: 1.938rem;
+  }
+}

@@ -1,0 +1,101 @@
+.frameParent,
+.rectangleParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  flex-direction: column;
+  gap: 3.687rem;
+}
+.rectangleParent {
+  gap: 5.375rem;
+}
+.frameChild {
+  width: 29.688rem;
+  position: relative;
+  border-radius: 24px;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+.frameGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.562rem;
+  min-width: 29.125rem;
+  max-width: 100%;
+  text-align: left;
+  font-size: 4.625rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+.headerWrapper {
+  width: 25.938rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+.header {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.header2 {
+  position: relative;
+  font-size: 1.125rem;
+  font-family: Urbanist;
+}
+.infoSummary {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  max-width: 100%;
+  text-align: left;
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+@media screen and (max-width: 1300px) {
+  .rectangleParent {
+    flex-wrap: wrap;
+  }
+  .frameChild {
+    flex: 1;
+  }
+  .infoSummary {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .frameParent {
+    gap: 1.813rem;
+  }
+  .rectangleParent {
+    gap: 2.688rem;
+  }
+  .frameGroup {
+    min-width: 100%;
+  }
+  .header {
+    font-size: 3.688rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .rectangleParent {
+    gap: 1.313rem;
+  }
+  .headerWrapper {
+    gap: 1.25rem;
+  }
+  .header {
+    font-size: 2.75rem;
+  }
+}

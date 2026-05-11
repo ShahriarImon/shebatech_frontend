@@ -1,0 +1,115 @@
+.featureItemsParent {
+  align-self: stretch;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5.219rem; /* Half of iconWrapper height to allow overlap */
+}
+
+.heroBackground {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1276 / 584; /* Based on original 79.75rem / 36.5rem */
+  max-height: 36.5rem;
+  border-radius: 24px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.dashboardIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gradientOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    25deg,
+    #005621 0%,
+    rgba(17, 59, 33, 0.69) 30%,
+    rgba(33, 33, 33, 0.38) 70%
+  );
+}
+
+.iconWrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10.438rem;
+  height: 10.438rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.circleContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  background:
+    linear-gradient(#34373f, #34373f) padding-box,
+    linear-gradient(29.87deg, #4caf4f, #103e13 29.81%, #103e13 69.71%, #00ad4d)
+      border-box;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.communityIcon {
+  height: 40%;
+  width: 40%;
+  position: relative;
+  z-index: 4;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .heroBackground {
+    aspect-ratio: 4 / 3;
+  }
+
+  .iconWrapper {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .featureItemsParent {
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heroBackground {
+    aspect-ratio: 1 / 1;
+  }
+
+  .iconWrapper {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .featureItemsParent {
+    padding-bottom: 3rem;
+  }
+}

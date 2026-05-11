@@ -1,0 +1,343 @@
+.navigation {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 50.188rem;
+  /* height: 140vh; */
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  font-family: Urbanist;
+}
+
+.frameParent,
+.navigation {
+  width: 100%;
+}
+.frameParent,
+.rectangleParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.frameChild {
+  object-fit: cover;
+  mix-blend-mode: luminosity;
+  transform: scale(1.1);
+}
+
+.frameItem,
+.frameInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* filter: grayscale(100); */
+}
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100);
+}
+.frameItem {
+  background: linear-gradient(
+    30deg,
+    rgba(0, 86, 33, 0.8),
+    rgba(33, 33, 33, 0.8) 60%
+  );
+  /* linear-gradient(25deg, rgba(0, 86, 33, 0.8), transparent 68%),
+    linear-gradient(70deg, rgba(33, 33, 33, 0.8), transparent 100%); */
+}
+.frameInner {
+  background: linear-gradient(
+    30deg,
+    rgba(0, 86, 33, 0.8),
+    rgba(33, 33, 33, 0.8) 60%
+  );
+  /* background:
+    linear-gradient(25deg, rgba(0, 86, 33, 0.8), transparent 68%),
+    linear-gradient(70deg, rgba(33, 33, 33, 0.8), transparent 100%); */
+}
+.groupIcon {
+  position: absolute;
+  top: 52.813rem;
+  left: 43.063rem;
+  width: 9.688rem;
+  height: 2.375rem;
+  z-index: 3;
+}
+.headerParent {
+  position: absolute;
+  top: 5rem;
+  left: 0rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+  /* max-width: 100%; */
+  /* text-align: left; */
+  font-size: 4.625rem;
+  color: #fff;
+  font-family: "Cal Sans";
+  line-height: 5rem;
+}
+.header,
+.header2 {
+  text-align: center;
+  margin: 0;
+  position: relative;
+  font-weight: 400;
+}
+.header {
+  font-size: inherit;
+  font-family: inherit;
+  text-shadow:
+    1px 0 0#000,
+    0 1px 0#000,
+    -1px 0 0#000,
+    0-1px 0#000;
+}
+.header2 {
+  width: 65%;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+  font-family: Urbanist;
+}
+
+.btn1st {
+  background-color: #7fc241;
+  border-radius: 30px;
+  cursor: pointer;
+  height: 50px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* transition: all 0.2s; */
+}
+.btn1st:hover {
+  background: linear-gradient(90deg, #7fc241, #00a046);
+}
+.btn2nd {
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  height: 50px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.btn2nd:hover {
+  border: 1px solid #7fc241;
+}
+.para {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  font-family: Geist;
+}
+.para2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  font-family: Geist;
+}
+
+.btn2nd:hover .para2 {
+  color: #7fc241;
+}
+
+.arrowIcon {
+  width: 12px;
+  transition: transform 0.2s ease-in-out;
+  /* height: 20px; */
+}
+.btn1st:hover .arrowIcon {
+  transform: rotate(45deg);
+}
+
+.topper {
+  z-index: 9;
+}
+.stlLogoHighResolution021Parent {
+  position: absolute;
+  top: 1.625rem;
+  left: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 12.875rem;
+  max-width: 100%;
+}
+.nonFloatingStlLogoHighResolution021Parent {
+  /* position: absolute;
+  top: 1.625rem;
+  left: 5rem; */
+  display: flex;
+  align-items: center;
+  gap: 12.875rem;
+  max-width: 100%;
+  flex-wrap: wrap;
+  color: white;
+  font-family: Urbanist;
+}
+.stlLogoHighResolution021 {
+  width: 10.5rem;
+  position: relative;
+  max-height: 100%;
+  object-fit: cover;
+}
+.buttonGlass {
+  height: 3.5rem;
+  width: 37.25rem;
+  border-radius: 100px;
+  background-color: var(--col-2);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.625rem 3.125rem 0.625rem 0.625rem;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  gap: 0.625rem;
+  opacity: 0.8;
+  max-width: 100%;
+}
+.buttonGlassChild,
+.headerGroup {
+  position: absolute;
+  margin: 0 !important;
+  flex-shrink: 0;
+}
+.buttonGlassChild {
+  height: 4.813rem;
+  width: 38.688rem;
+  top: -0.812rem;
+  left: -0.875rem;
+  backdrop-filter: blur(9px);
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: none;
+  z-index: 0;
+}
+.headerGroup {
+  height: 1.188rem;
+  width: 30.75rem;
+  top: 1.188rem;
+  left: 3.125rem;
+  z-index: 1;
+}
+.header3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header4,
+.header5 {
+  position: absolute;
+  top: 0;
+  left: 4.938rem;
+  cursor: pointer;
+}
+.header5 {
+  left: 11rem;
+}
+.header6,
+.header7,
+.header8 {
+  position: absolute;
+  top: 0;
+  left: 16.875rem;
+}
+.header7,
+.header8 {
+  left: 21.063rem;
+  cursor: pointer;
+}
+.header8 {
+  left: 27.688rem;
+}
+.rectangleDiv,
+.rectangleGroup {
+  border-radius: 34px;
+  background-color: #4caf4f;
+}
+.rectangleGroup {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  height: 3.5rem;
+  width: 6.375rem;
+  position: relative;
+}
+.rectangleDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.header9 {
+  position: absolute;
+  top: 1.125rem;
+  left: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Urbanist;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+.navigationChild {
+  position: absolute;
+  top: 4.188rem;
+  left: 31.5rem;
+  width: 2.563rem;
+  height: 0.125rem;
+  z-index: 4;
+}
+@media screen and (max-width: 1250px) {
+  .frameParent,
+  .navigation {
+    height: auto;
+    min-height: 57.188rem;
+  }
+  .stlLogoHighResolution021Parent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header {
+    font-size: 3.688rem;
+  }
+  .header2 {
+    font-size: 1.813rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    font-size: 2.75rem;
+  }
+  .header2 {
+    font-size: 1.375rem;
+  }
+}

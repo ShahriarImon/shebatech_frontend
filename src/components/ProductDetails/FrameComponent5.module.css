@@ -1,0 +1,264 @@
+.hrmsCaseStudyInner {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 5.125rem 0.687rem 4.937rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: 4.625rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+
+.frameParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 100%;
+}
+
+.headerParent {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.header {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.header2 {
+  flex: 1;
+  min-width: 300px;
+  font-size: 1.125rem;
+  font-family: Urbanist;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.frameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.frameContainer,
+.frameSection {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rectangleParent {
+  display: flex;
+  /* align-items: flex-start; */
+  justify-content: center;
+  align-items: center;
+}
+.rectangleParent {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.rectangleParent::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250%;
+  height: 250%;
+  background: conic-gradient(
+    from 0deg,
+    #00ad4d 0deg,
+    transparent 30deg,
+    transparent 150deg,
+    #00ad4d 180deg,
+    transparent 210deg,
+    transparent 330deg,
+    #00ad4d 360deg
+  );
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 0;
+  transition: none;
+  z-index: 0;
+}
+
+.rectangleParent::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: #26272e;
+  border-radius: 23px;
+  opacity: 0;
+  transition: none;
+  z-index: 0;
+}
+
+.rectangleParent:hover {
+  transform: translateY(-10px);
+  background:
+    linear-gradient(#26272e, #26272e) padding-box,
+    transparent border-box;
+}
+
+.rectangleParent:hover::before {
+  opacity: 1;
+  animation: rotate 4s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.rectangleParent:hover::after {
+  opacity: 1;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.rectangleParent {
+  width: 100%;
+  height: 220px;
+  flex-direction: column;
+  border-radius: 24px;
+  /* padding: 3rem 0 3.312rem 2.062rem; */
+  gap: 0.625rem;
+  background:
+    linear-gradient(#26272e, #26272e) padding-box,
+    linear-gradient(to right, #34353b 15%, #00ad4d 50%, #34353b 85%) border-box;
+}
+.frameChild {
+  width: 14.75rem;
+  height: 14.25rem;
+  position: relative;
+  border-radius: 24px;
+  background: linear-gradient(
+      90deg,
+      #34353b 12.02%,
+      #00ad4d 48.08%,
+      #313238 87.5%
+    )
+    border-box;
+  display: none;
+  flex-shrink: 0;
+}
+.nestedValue {
+  /* align-self: stretch; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.header3 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.header4 {
+  width: 10.063rem;
+  position: relative;
+  font-size: 1.125rem;
+  font-family: Urbanist;
+  display: inline-block;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.rectangleGroup,
+.rectangleContainer,
+.rectangleParent2,
+.rectangleParent3,
+.frameDiv {
+  flex: 1;
+  min-width: 250px;
+  max-width: 100%;
+  padding: 3rem 2rem;
+  border-radius: 24px;
+  background-color: #26272e;
+  border: 1px solid #34353b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition:
+    border-color 0.3s,
+    transform 0.3s;
+  box-sizing: border-box;
+}
+
+.rectangleGroup:hover,
+.rectangleContainer:hover,
+.rectangleParent2:hover,
+.rectangleParent3:hover,
+.frameDiv:hover {
+  border-color: #00ad4d;
+  transform: translateY(-5px);
+}
+
+.header3,
+.header6,
+.header8 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: Urbanist;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .hrmsCaseStudyInner {
+    padding: 0 2rem 1rem;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerParent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .header2 {
+    min-width: 100%;
+  }
+
+  .rectangleGroup,
+  .rectangleContainer,
+  .rectangleParent2,
+  .rectangleParent3,
+  .frameDiv {
+    padding: 2.5rem 1.5rem;
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hrmsCaseStudyInner {
+    padding: 0 1rem 1rem;
+    font-size: 2.25rem;
+  }
+}

@@ -1,0 +1,79 @@
+.frameWrapper,
+.letsStartSomethingGreatToParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameWrapper {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 1.25rem 0 1.312rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+  font-family: Geist;
+  padding-top: 4.9rem;
+}
+
+.subTitle {
+  position: relative;
+  top: -40px;
+  /* padding-top: -50px !important; */
+  font-size: 30px !important;
+  font-weight: 400;
+}
+
+.subTitle2 {
+  position: relative;
+  top: -105px;
+  /* padding-top: -50px !important; */
+  font-size: 30px !important;
+  font-weight: 400;
+}
+.letsStartSomethingGreatToParent {
+  flex-direction: column;
+  gap: 2.937rem;
+}
+.letsStartSomethingContainer {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 900;
+  font-family: inherit;
+}
+.great {
+  color: var(--Brand-Light);
+}
+.component2Wrapper {
+  position: relative;
+  top: -120px;
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 1.25rem;
+}
+
+/* ========== TABLET (max-width: 768px) ========== */
+@media screen and (max-width: 768px) {
+  .frameWrapper {
+    padding: 0 1rem;
+  }
+  .letsStartSomethingContainer {
+    font-size: 3rem;
+  }
+  .letsStartSomethingGreatToParent {
+    gap: 2rem;
+  }
+}
+
+/* ========== MOBILE (max-width: 480px) ========== */
+@media screen and (max-width: 480px) {
+  .letsStartSomethingContainer {
+    font-size: 2rem;
+  }
+  .letsStartSomethingGreatToParent {
+    gap: 1.5rem;
+  }
+}

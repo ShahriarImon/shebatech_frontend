@@ -1,0 +1,108 @@
+.title {
+  font-size: 2.9rem;
+  font-weight: 700;
+  color: white;
+}
+.subTitle {
+  font-size: 1.3rem;
+  color: white;
+}
+.descriptionCon {
+  width: 61%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.listCon {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 12px;
+}
+
+.cardContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28%;
+  background-color: #34373f;
+  border-radius: 20px;
+  padding: 4rem 1.4rem 1.9rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cardLogo {
+  width: 140px;
+  align-self: center;
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff1a;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem 4rem;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.infoLabel {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.infoValue {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.applyButton {
+  margin-top: 1rem;
+  background: linear-gradient(0deg, #7fc241, #34b649);
+  /* color: black; */
+  border: none;
+  border-radius: 12px;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
+  text-align: center;
+}
+
+.applyButton:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .descriptionCon {
+    width: 100%;
+  }
+  .cardContainer {
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+  }
+}

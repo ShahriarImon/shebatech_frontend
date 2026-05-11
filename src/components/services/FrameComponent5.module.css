@@ -1,0 +1,166 @@
+.testimonialSummary,
+.testimonialSummaryParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.testimonialSummaryParent {
+  flex-direction: column;
+  padding: 0 0 0.375rem;
+  box-sizing: border-box;
+  gap: 3.062rem;
+  padding-top: 4.5rem;
+}
+.testimonialSummary {
+  gap: 1.937rem;
+  text-align: left;
+  font-size: 4.625rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+.header {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.testimonialSubtitle {
+  width: 28.438rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.625rem 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: 1.125rem;
+  font-family: Urbanist;
+}
+.header2 {
+  position: relative;
+}
+.expertContainerParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.headerParent {
+  display: flex;
+  align-items: flex-start;
+  width: 38%;
+}
+.expertContainer {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  align-self: stretch;
+  justify-content: space-between;
+  gap: 3rem;
+  text-align: left;
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+.headerParent {
+  flex-direction: column;
+  gap: 1rem;
+}
+.header3 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+.header4 {
+  max-width: 100%;
+  font-family: Urbanist;
+}
+.header4 {
+  width: 29.688rem;
+  position: relative;
+  font-size: 1.125rem;
+  display: inline-block;
+}
+.expertContainerInner {
+  width: 62%;
+  font-family: Urbanist;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.687rem 0 0;
+  box-sizing: border-box;
+  font-size: 1.313rem;
+}
+
+.softwareProfilePairParent {
+  width: 38.063rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.187rem;
+  max-width: 100%;
+}
+@media screen and (max-width: 1350px) {
+  .testimonialSummary {
+    flex-wrap: wrap;
+  }
+  .expertContainer {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+  .expertContainerInner,
+  .headerParent {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .testimonialSummaryParent {
+    padding-bottom: 6.063rem;
+    box-sizing: border-box;
+  }
+  .expertContainerInner {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .testimonialSummaryParent {
+    gap: 1.5rem;
+  }
+  .testimonialSummary {
+    gap: 0.938rem;
+  }
+  .header {
+    font-size: 3.688rem;
+  }
+  .headerParent {
+    min-width: 100%;
+  }
+  .header3 {
+    font-size: 2.375rem;
+  }
+
+  .softwareProfilePairParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .testimonialSummaryParent {
+    padding-bottom: 3.938rem;
+    box-sizing: border-box;
+  }
+  .header {
+    font-size: 2.75rem;
+  }
+  .header3 {
+    font-size: 1.813rem;
+  }
+}

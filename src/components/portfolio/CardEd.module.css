@@ -1,0 +1,79 @@
+.cardEd,
+.cardEdChild {
+  height: 31.375rem;
+  width: 39.063rem;
+}
+.cardEd {
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  font-size: 1.125rem;
+  color: #fff;
+  font-family: Urbanist;
+}
+.cardEdChild {
+  position: relative;
+  border-radius: 24px;
+  object-fit: cover;
+}
+.frameParent {
+  height: 31.375rem;
+  width: 39.063rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+  background:
+    linear-gradient(to top, rgba(0, 86, 33, 0.8), transparent 68%),
+    linear-gradient(to top, rgba(33, 33, 33, 0.8), transparent 100%);
+  border-radius: 24px;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  height: 31.375rem;
+}
+.cardEd:hover .frameParent {
+  opacity: 1;
+  visibility: visible;
+}
+.restaurantAppWrapper {
+  position: absolute;
+  top: -4.125rem;
+  left: 0;
+  border-radius: 32px;
+  border: 1px solid #7fc241;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  flex-shrink: 0;
+}
+.restaurantApp {
+  position: relative;
+}
+.foodDeliveryService {
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: left;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 1325px) {
+  .cardEd,
+  .cardEdChild {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .cardEd {
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,243 @@
+.frameParent,
+.frameWrapper {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.frameParent {
+  flex-direction: column;
+  padding: 0 0 0.375rem;
+  gap: 3.437rem;
+}
+.frameWrapper {
+  padding: 0 5.125rem 0 4.937rem;
+  text-align: left;
+  font-size: 4.625rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+.headerParent {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 100%;
+}
+.header {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.frameGroup,
+.header2 {
+  max-width: 100%;
+  font-family: Urbanist;
+}
+.header2 {
+  height: 2.75rem;
+  width: 36.688rem;
+  position: relative;
+  font-size: 1.125rem;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameGroup {
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  cursor: grab;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 4.937rem;
+  box-sizing: border-box;
+  gap: 1.25rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+.frameGroup::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.frameGroup:active {
+  cursor: grabbing;
+}
+.frameChild,
+.rectangleParent {
+  background-color: var(--col-2);
+  flex-shrink: 0;
+}
+.rectangleParent {
+  width: 25.813rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2.25rem 0 2.312rem;
+  box-sizing: border-box;
+  gap: 1.375rem;
+  max-width: 100%;
+}
+.frameChild {
+  align-self: stretch;
+  height: 18.75rem;
+  position: relative;
+  display: none;
+}
+.innovation1Wrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 1.25rem;
+  flex-shrink: 0;
+}
+.innovation1Icon {
+  height: 7.688rem;
+  width: 7.063rem;
+  position: relative;
+  z-index: 1;
+}
+.frameContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.375rem;
+  flex-shrink: 0;
+}
+.innovativeCultureWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 4.75rem 0 4.812rem;
+}
+.innovativeCulture {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  z-index: 1;
+}
+.weCelebrateFresh {
+  position: relative;
+  font-size: 1rem;
+  z-index: 1;
+}
+.frameItem,
+.rectangleGroup {
+  background-color: #263238;
+  flex-shrink: 0;
+}
+.rectangleGroup {
+  width: 25.813rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2.25rem 0 2.312rem;
+  box-sizing: border-box;
+  gap: 1.375rem;
+  max-width: 100%;
+}
+.frameItem {
+  align-self: stretch;
+  height: 18.75rem;
+  position: relative;
+  display: none;
+}
+.growthOpportunitiesWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 3.125rem 0 3.187rem;
+}
+.frameParent3 {
+  width: 3.813rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+  gap: 0.375rem;
+  flex-shrink: 0;
+}
+.growthOpportunitiesContainer {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 0 0 3.187rem;
+}
+.growthOpportunities2 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.weCelebrateFresh4 {
+  width: 25.813rem;
+  position: relative;
+  font-size: 1rem;
+  display: inline-block;
+  max-width: 678%;
+  z-index: 1;
+}
+@media screen and (max-width: 1350px) {
+  .headerParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .frameParent {
+    gap: 1.688rem;
+  }
+  .frameWrapper {
+    padding-left: 2.438rem;
+    padding-right: 2.563rem;
+    box-sizing: border-box;
+  }
+  .headerParent {
+    gap: 1.25rem;
+  }
+  .header {
+    font-size: 3.688rem;
+  }
+  .frameGroup {
+    padding-left: 2.438rem;
+    padding-right: 2.438rem;
+    box-sizing: border-box;
+  }
+  .growthOpportunities2,
+  .innovativeCulture {
+    font-size: 1.625rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    font-size: 2.75rem;
+  }
+  .innovativeCultureWrapper {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    box-sizing: border-box;
+  }
+  .innovativeCulture {
+    font-size: 1.188rem;
+  }
+  .growthOpportunitiesWrapper {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    box-sizing: border-box;
+  }
+  .growthOpportunities2 {
+    font-size: 1.188rem;
+  }
+}

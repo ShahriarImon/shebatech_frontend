@@ -1,0 +1,79 @@
+.rectangleParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 19.25rem 1.25rem 1.75rem 2.375rem;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  min-width: 19.125rem;
+  width: 100%;
+  text-align: left;
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+.frameChild,
+.frameItem {
+  width: 100%;
+  height: 100.4%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 24px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.frameChild {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.frameItem {
+  background: linear-gradient(180deg, rgba(0, 173, 77, 0), #003417);
+  z-index: 1;
+}
+
+.rectangleParent:hover .frameItem {
+  background: linear-gradient(0deg, #003417, rgba(0, 173, 77, 0.18));
+}
+.header,
+.header2 {
+  position: relative;
+  flex-shrink: 0;
+}
+.header {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  z-index: 2;
+}
+.header2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: Urbanist;
+  z-index: 3;
+  margin-top: -0.313rem;
+}
+@media screen and (max-width: 800px) {
+  .header {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .rectangleParent {
+    padding-top: 12.5rem;
+    padding-bottom: 1.25rem;
+    box-sizing: border-box;
+  }
+  .header {
+    font-size: 1.5rem;
+  }
+}

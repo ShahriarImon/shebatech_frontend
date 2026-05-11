@@ -1,0 +1,399 @@
+.valueTitles,
+.valueTitlesParent {
+  display: flex;
+  gap: 2.5rem;
+  max-width: 100%;
+}
+.valueTitlesParent {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.valueTitles {
+  width: 70.438rem;
+  height: 6rem;
+  align-items: center;
+  z-index: 2;
+  text-align: left;
+  font-size: 4.625rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+.header,
+.header2 {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.header {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.header2 {
+  height: 2.75rem;
+  width: 45.75rem;
+  font-size: 1.125rem;
+  font-family: Urbanist;
+  flex-shrink: 0;
+}
+.rectangleParent,
+.valueSummary {
+  display: flex;
+  align-items: flex-start;
+}
+.valueSummary {
+  align-self: stretch;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: left;
+  font-size: 2.25rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+
+/* Card Common Styles for Rotation */
+.rectangleParent,
+.rectangleGroup,
+.rectangleContainer,
+.frameDiv,
+.rectangleParent2 {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.rectangleParent::before,
+.rectangleGroup::before,
+.rectangleContainer::before,
+.frameDiv::before,
+.rectangleParent2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250%;
+  height: 250%;
+  background: conic-gradient(
+    from 0deg,
+    #00ad4d 0deg,
+    transparent 30deg,
+    transparent 150deg,
+    #00ad4d 180deg,
+    transparent 210deg,
+    transparent 330deg,
+    #00ad4d 360deg
+  );
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 0;
+  transition: none;
+  z-index: 0;
+}
+
+.rectangleParent::after,
+.rectangleGroup::after,
+.rectangleContainer::after,
+.frameDiv::after,
+.rectangleParent2::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: #26272e;
+  border-radius: 23px;
+  opacity: 0;
+  transition: none;
+  z-index: 0;
+}
+
+.rectangleParent:hover,
+.rectangleGroup:hover,
+.rectangleContainer:hover,
+.frameDiv:hover,
+.rectangleParent2:hover {
+  transform: translateY(-10px);
+  background:
+    linear-gradient(#26272e, #26272e) padding-box,
+    transparent border-box;
+}
+
+.rectangleParent:hover::before,
+.rectangleGroup:hover::before,
+.rectangleContainer:hover::before,
+.frameDiv:hover::before,
+.rectangleParent2:hover::before {
+  opacity: 1;
+  animation: rotate 4s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.rectangleParent:hover::after,
+.rectangleGroup:hover::after,
+.rectangleContainer:hover::after,
+.frameDiv:hover::after,
+.rectangleParent2:hover::after {
+  opacity: 1;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.rectangleParent {
+  min-width: 14.438rem;
+  max-width: 14.75rem;
+  flex-direction: column;
+  border-radius: 24px;
+  padding: 3rem 0 3.312rem 2.062rem;
+  gap: 0.625rem;
+  background:
+    linear-gradient(#26272e, #26272e) padding-box,
+    linear-gradient(to right, #34353b 15%, #00ad4d 50%, #34353b 85%) border-box;
+}
+
+.frameChild {
+  width: 14.75rem;
+  height: 14.25rem;
+  position: relative;
+  border-radius: 24px;
+  background: linear-gradient(
+      90deg,
+      #34353b 12.02%,
+      #00ad4d 48.08%,
+      #313238 87.5%
+    )
+    border-box;
+  display: none;
+  flex-shrink: 0;
+}
+.nestedValue {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.header3 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.header4 {
+  width: 10.063rem;
+  position: relative;
+  font-size: 1.125rem;
+  font-family: Urbanist;
+  display: inline-block;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.rectangleGroup,
+.valueSummaryInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.valueSummaryInner {
+  flex: 1;
+  padding: 5.75rem 0 0;
+  box-sizing: border-box;
+  min-width: 14.5rem;
+  max-width: 14.813rem;
+}
+.rectangleGroup {
+  align-self: stretch;
+  border-radius: 24px;
+  padding: 3rem 0 3.312rem 2.062rem;
+  gap: 0.625rem;
+  background:
+    linear-gradient(#26272e, #26272e) padding-box,
+    linear-gradient(to right, #34353b 15%, #00ad4d 50%, #34353b 85%) border-box;
+}
+
+.frameItem,
+.header6 {
+  position: relative;
+  flex-shrink: 0;
+}
+.frameItem {
+  width: 14.813rem;
+  height: 14.25rem;
+  border-radius: 24px;
+  background: linear-gradient(
+      90deg,
+      #34353b 12.02%,
+      #00ad4d 48.08%,
+      #313238 87.5%
+    )
+    border-box;
+  display: none;
+}
+.header6 {
+  width: 10rem;
+  font-size: 1.125rem;
+  font-family: Urbanist;
+  display: inline-block;
+  z-index: 1;
+}
+.rectangleContainer {
+  min-width: 14.438rem;
+  max-width: 14.75rem;
+  flex-direction: column;
+  border-radius: 24px;
+  padding: 3rem 0 3.312rem 2.062rem;
+  gap: 0.625rem;
+  background:
+    linear-gradient(#26272e, #26272e) padding-box,
+    linear-gradient(to right, #34353b 15%, #00ad4d 50%, #34353b 85%) border-box;
+  display: flex;
+  align-items: flex-start;
+}
+
+.headerContainer {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding: 0 1.875rem 0 0;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.valueSummaryChild {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5.75rem 0 0;
+  box-sizing: border-box;
+  min-width: 14.5rem;
+  max-width: 14.813rem;
+  font-size: 2rem;
+}
+.frameDiv,
+.headerFrame {
+  align-self: stretch;
+  display: flex;
+}
+.frameDiv {
+  min-width: 14.438rem;
+  max-width: 14.75rem;
+  flex-direction: column;
+  border-radius: 24px;
+  padding: 3rem 0 3.312rem 2.062rem;
+  gap: 0.625rem;
+  background:
+    linear-gradient(#26272e, #26272e) padding-box,
+    linear-gradient(to right, #34353b 15%, #00ad4d 50%, #34353b 85%) border-box;
+}
+
+.headerFrame {
+  align-items: center;
+  padding: 0 1.5rem 0 0;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.header9 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  font-family: inherit;
+}
+.header10 {
+  position: relative;
+  font-size: 1.125rem;
+  font-family: Urbanist;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.rectangleParent2 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 14.438rem;
+  max-width: 14.75rem;
+  flex-direction: column;
+  border-radius: 24px;
+  padding: 2rem 0 2rem 2rem;
+  gap: 0.625rem;
+  background:
+    linear-gradient(#26272e, #26272e) padding-box,
+    linear-gradient(to right, #34353b 15%, #00ad4d 50%, #34353b 85%) border-box;
+}
+
+.headerWrapper2 {
+  width: 12.625rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.header11 {
+  margin: 0;
+  width: 13.563rem;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 1300px) {
+  .valueSummary,
+  .valueTitles {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .valueTitles,
+  .valueTitlesParent {
+    gap: 1.25rem;
+  }
+  .header {
+    font-size: 3.688rem;
+  }
+  .header3 {
+    font-size: 1.813rem;
+  }
+  .header11,
+  .header9 {
+    font-size: 1.625rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    font-size: 2.75rem;
+  }
+  .rectangleParent {
+    flex: 1;
+  }
+  .header3 {
+    font-size: 1.375rem;
+  }
+  .rectangleContainer {
+    flex: 1;
+  }
+  .header9 {
+    font-size: 1.188rem;
+  }
+  .rectangleParent2 {
+    flex: 1;
+  }
+  .header11 {
+    font-size: 1.188rem;
+  }
+}

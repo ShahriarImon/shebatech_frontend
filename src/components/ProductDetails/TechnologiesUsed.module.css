@@ -1,0 +1,113 @@
+.technologiesUsed {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 5rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: 4.625rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+
+.formFieldsParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.formFields {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.header {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  line-height: 1.1;
+}
+
+.header2 {
+  flex: 1;
+  min-width: 300px;
+  font-size: 1.125rem;
+  font-family: Urbanist;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: Urbanist;
+}
+
+.header3 {
+  width: 100%;
+  /* max-width: 800px; */
+  position: relative;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.reactNative {
+  white-space: pre-wrap;
+}
+
+.span {
+  color: #4caf4f;
+}
+
+.span2 {
+  color: #00ad4d;
+}
+
+@media screen and (max-width: 1024px) {
+  .technologiesUsed {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .header {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .formFieldsParent {
+    gap: 2rem;
+  }
+
+  .header {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .technologiesUsed {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+
+  .header3 {
+    font-size: 1.25rem;
+  }
+}

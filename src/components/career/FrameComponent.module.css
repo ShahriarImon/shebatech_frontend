@@ -1,0 +1,122 @@
+.rectangleParent {
+  align-self: stretch;
+  border-radius: 12px;
+  background-color: var(--col-2);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2.562rem 3rem 2.562rem 3.062rem;
+  box-sizing: border-box;
+  gap: 1.25rem;
+  max-width: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: Geist;
+}
+.frameChild,
+.frameParent {
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.frameChild {
+  height: 9.375rem;
+  width: 79.875rem;
+  position: relative;
+  border-radius: 12px;
+  background-color: var(--col-2);
+  display: none;
+}
+.frameParent {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+.frameGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  min-width: 8.188rem;
+}
+.flutterDeveloperWrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 0 0 0.062rem;
+}
+.flutterDeveloper {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  z-index: 1;
+}
+.bolt2Wrapper,
+.frameContainer {
+  display: flex;
+  align-items: flex-start;
+}
+.frameContainer {
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #00ad4d;
+}
+.bolt2Wrapper {
+  flex-direction: column;
+  padding: 0.062rem 0 0;
+}
+.bolt2Icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  position: relative;
+  z-index: 1;
+}
+.yearsExperience {
+  position: relative;
+  font-weight: 300;
+  z-index: 1;
+}
+.calendarDay2Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.125rem 0 0;
+}
+.calendarDay2Icon {
+  width: 1.063rem;
+  height: 1.063rem;
+  position: relative;
+  z-index: 1;
+}
+.applyButtonWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.437rem 0 0;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 1350px) {
+  .rectangleParent {
+    gap: 1.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .rectangleParent {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .frameParent {
+    flex-wrap: wrap;
+  }
+  .flutterDeveloper {
+    font-size: 1.188rem;
+  }
+}

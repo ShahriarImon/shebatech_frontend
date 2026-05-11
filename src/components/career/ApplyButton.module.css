@@ -1,0 +1,115 @@
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.applyButton {
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 0.625rem 0.562rem;
+  background-color: transparent;
+  width: 12rem;
+  border-radius: 12px;
+  background: linear-gradient(
+      90deg,
+      #838383 12.02%,
+      #00ad4d 48.08%,
+      #838383 87.5%
+    )
+    border-box;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.applyBtn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 0;
+  font-family: var(--font-sans);
+  letter-spacing: 0.01em;
+  transition: color 0.2s ease;
+}
+
+.applyBtn::before {
+  content: "";
+  position: absolute;
+  inset: -1.5px;
+  border-radius: 13px;
+  padding: 1.5px;
+  background: conic-gradient(
+    from var(--angle),
+    #4ade80 0%,
+    transparent 30%,
+    transparent 70%,
+    #4ade80 100%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: spin 3s linear infinite;
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.applyBtn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: transparent;
+  z-index: -1;
+  transition: background 0.2s ease;
+}
+
+.applyBtn:hover::before {
+  animation-play-state: paused;
+  opacity: 0;
+}
+.applyBtn:hover .applyNow {
+  transform: translateX(10px);
+}
+
+.applyBtn:hover::after {
+  background: linear-gradient(to bottom, #00ad4d, #83d34e);
+}
+
+.applyBtn:hover .arrowSmallRight1Icon {
+  transform: rotate(45deg);
+}
+@keyframes spin {
+  to {
+    --angle: 360deg;
+  }
+}
+.applyNow {
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: Urbanist;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.arrowSmallRight1Icon {
+  height: 2.119rem;
+  width: 2.119rem;
+  position: relative;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}

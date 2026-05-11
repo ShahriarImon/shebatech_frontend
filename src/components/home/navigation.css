@@ -1,0 +1,27 @@
+.hero .slick-dots {
+  bottom: 4.5% !important;
+  z-index: 6;
+}
+
+.hero .slick-dots li {
+  margin: 0px;
+  width: 13px;
+}
+
+.hero .slick-dots li button {
+  /* pointer-events: none; */
+}
+.hero .slick-dots li button:before {
+  color: white !important; /* inactive dot */
+  opacity: 1;
+}
+.hero .slick-dots li.slick-active button:before {
+  color: #7fc241 !important;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .slick-dots {
+    bottom: 5% !important;
+  }
+}

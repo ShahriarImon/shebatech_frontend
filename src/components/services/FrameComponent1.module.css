@@ -1,0 +1,163 @@
+.frameParent {
+  position: absolute;
+  top: 10.063rem;
+  left: 5rem;
+  width: 79.875rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.25rem;
+  max-width: 100%;
+}
+.stlLogoHighResolution021Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.437rem 0 0;
+}
+.stlLogoHighResolution021 {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 3;
+}
+.buttonGlassWrapper {
+  width: 41.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.buttonGlass {
+  width: 37.25rem;
+  height: 3.5rem;
+  border-radius: 100px;
+  background-color: var(--col-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 3.125rem 0.625rem 0.625rem;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  gap: 0.625rem;
+  max-width: 100%;
+}
+.buttonGlassChild,
+.headerParent {
+  margin: 0 !important;
+  position: absolute;
+  flex-shrink: 0;
+}
+.buttonGlassChild {
+  height: 4.813rem;
+  width: 38.688rem;
+  top: -0.812rem;
+  left: -0.875rem;
+  backdrop-filter: blur(9px);
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: none;
+  z-index: 0;
+}
+.headerParent {
+  height: 1.188rem;
+  width: 30.5rem;
+  top: 1.188rem;
+  left: 3.375rem;
+  z-index: 1;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  font-family: Urbanist;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.header2,
+.header3 {
+  position: absolute;
+  top: 0;
+  left: 4.938rem;
+}
+.header3 {
+  left: 11rem;
+  cursor: pointer;
+}
+.header4 {
+  left: 16.875rem;
+}
+.header4,
+.header5,
+.header6 {
+  position: absolute;
+  top: 0;
+}
+.header5 {
+  left: 21.063rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.header6 {
+  left: 27.438rem;
+}
+.buttonGlassInner,
+.buttonGlassItem {
+  height: 0.125rem;
+  position: absolute;
+  margin: 0 !important;
+  bottom: 0.813rem;
+  border-top: 2px solid #4caf4f;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.buttonGlassItem {
+  width: 3.25rem;
+  left: 8.313rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.buttonGlassInner {
+  width: 0.5rem;
+  left: 11.688rem;
+  z-index: 3;
+}
+.rectangleParent {
+  cursor: pointer;
+  border: 0;
+  padding: 1.125rem 1.937rem 1.187rem 2rem;
+  background-color: #4caf4f;
+  border-radius: 34px;
+  display: flex;
+  align-items: flex-start;
+  z-index: 3;
+}
+.rectangleParent:hover {
+  background-color: #339636;
+}
+.frameChild,
+.header7 {
+  position: relative;
+  flex-shrink: 0;
+}
+.frameChild {
+  height: 3.5rem;
+  width: 6.375rem;
+  border-radius: 34px;
+  background-color: #4caf4f;
+  display: none;
+}
+.header7 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Urbanist;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}

@@ -1,0 +1,192 @@
+.partnerSummary,
+.partnerSummaryParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.partnerSummaryParent {
+  align-self: stretch;
+  flex-direction: column;
+  padding: 0 0 1.437rem;
+  box-sizing: border-box;
+  gap: 2.25rem;
+  margin-top: 0.5rem;
+  padding-top: 4.5rem;
+}
+.partnerSummary {
+  gap: 2.5rem;
+  text-align: left;
+  font-size: 4.625rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+.header {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 55%;
+}
+.partnerDescription {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.625rem 0 0;
+  box-sizing: border-box;
+  /* max-width: 100%; */
+  font-size: 1.125rem;
+  font-family: Urbanist;
+}
+.header2 {
+  position: relative;
+}
+.highlightGridParent {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  max-width: 100%;
+}
+
+.highlightGrid {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  flex-direction: column;
+  width: 50%;
+}
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.rectangleParent {
+  position: relative;
+  isolation: isolate;
+}
+.frame41611,
+.frameChild {
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.frameChild {
+  height: 29.625rem;
+  flex: 1;
+  position: relative;
+  border-radius: 24px;
+  max-width: 100%;
+  overflow: hidden;
+}
+.frame41611 {
+  width: 32.313rem;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -0.312rem;
+  left: 3rem;
+  max-height: 100%;
+  z-index: 1;
+}
+.frameWrapper,
+.vectorParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.frameWrapper {
+  justify-content: flex-end;
+  padding: 0 0 1.643rem;
+}
+.vectorParent {
+  height: 25.419rem;
+  padding: 0 0 0.918rem;
+  box-sizing: border-box;
+  gap: 6.125rem;
+}
+.frameItem {
+  width: 1.625rem;
+  height: 0.919rem;
+  position: relative;
+}
+.highlightHeaderWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+.highlightHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: space-between;
+}
+.flat {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+.highlightHeaderWrapper {
+  justify-content: flex-end;
+  padding: 0 0 1.375rem;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 2rem;
+  color: #fff;
+  font-family: Urbanist;
+}
+.highlightHeader {
+  gap: 3.75rem;
+}
+.header3 {
+  display: inline-block;
+  max-width: 100%;
+}
+.header3,
+.header5 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+@media screen and (max-width: 1350px) {
+  .highlightGridParent,
+  .partnerSummary {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .partnerSummaryParent {
+    gap: 1.125rem;
+  }
+  .partnerSummary {
+    gap: 1.25rem;
+  }
+  .header {
+    font-size: 3.688rem;
+  }
+  .highlightGrid {
+    min-width: 100%;
+  }
+  .highlightHeader {
+    gap: 1.875rem;
+  }
+  .header3,
+  .header5 {
+    font-size: 1.625rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    font-size: 2.75rem;
+  }
+  .header3,
+  .header5 {
+    font-size: 1.188rem;
+  }
+}

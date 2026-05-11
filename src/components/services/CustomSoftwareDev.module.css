@@ -1,0 +1,114 @@
+.customSoftwareDev {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.531rem;
+  width: 100%;
+  text-align: left;
+  font-size: 1.125rem;
+  color: #fff;
+  font-family: Urbanist;
+  padding-top: 4.9rem;
+}
+
+.solutionsOverview {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.375rem;
+  max-width: 100%;
+  text-align: left;
+  font-size: 4.625rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+
+.header12 {
+  margin: 0;
+  max-width: 60%;
+  position: relative;
+  font-size: inherit;
+  line-height: 5rem;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+.developmentSolutionContainerParent,
+.solutionSubtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.solutionSubtitle {
+  flex: 1;
+  padding: 1.375rem 0 0;
+  box-sizing: border-box;
+  min-width: 27.563rem;
+  font-size: 1.125rem;
+  font-family: Urbanist;
+}
+
+.header2 {
+  position: relative;
+}
+
+.developmentSolutionContainerParent {
+  align-self: stretch;
+  gap: 2rem;
+}
+
+.developmentSolutionContainer {
+  text-align: left;
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Cal Sans";
+}
+
+.developmentSolutionContainer,
+.developmentSolutionContainer2 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 2rem;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1350px) {
+  .solutionsOverview {
+    flex-wrap: wrap;
+  }
+  .header12 {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header12 {
+    font-size: 3.688rem;
+    line-height: 4rem;
+  }
+  .header12,
+  .solutionSubtitle {
+    min-width: 100%;
+  }
+  .developmentSolutionContainer,
+  .developmentSolutionContainer2,
+  .developmentSolutionContainerParent {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header12 {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
+}

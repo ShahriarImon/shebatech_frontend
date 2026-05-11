@@ -1,0 +1,338 @@
+.frameGroup,
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+  font-size: 4.625rem;
+  color: #fff;
+  font-family: "Cal Sans";
+  background-image: url(/aboutUsBanner.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  position: relative;
+}
+.frameGroup {
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.stlLogoHighResolution021Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.437rem 0 0;
+}
+.stlLogoHighResolution021 {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.glassButtonArea {
+  width: 41.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.buttonGlass {
+  width: 37.25rem;
+  height: 3.5rem;
+  border-radius: 100px;
+  background-color: #33363e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 3.125rem 0.625rem 0.625rem;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  gap: 0.625rem;
+  max-width: 100%;
+}
+.buttonGlassChild,
+.headerParent {
+  margin: 0 !important;
+  position: absolute;
+  flex-shrink: 0;
+}
+.buttonGlassChild {
+  height: 4.813rem;
+  width: 38.688rem;
+  top: -0.812rem;
+  left: -0.875rem;
+  backdrop-filter: blur(9px);
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: none;
+  z-index: 0;
+}
+.headerParent {
+  height: 1.188rem;
+  width: 30.5rem;
+  top: 1.188rem;
+  left: 3.375rem;
+  z-index: 1;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  font-family: Urbanist;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.header2,
+.header3 {
+  position: absolute;
+  top: 0;
+  left: 4.938rem;
+}
+.header3 {
+  left: 11rem;
+}
+.header4 {
+  left: 16.875rem;
+}
+.header4,
+.header5,
+.header6 {
+  position: absolute;
+  top: 0;
+}
+.header5 {
+  left: 21.063rem;
+  white-space: nowrap;
+}
+.header6 {
+  left: 27.438rem;
+}
+.buttonGlassInner,
+.buttonGlassItem {
+  height: 0.125rem;
+  width: 3.563rem;
+  position: absolute;
+  margin: 0 !important;
+  right: 9.25rem;
+  bottom: 0.813rem;
+  border-top: 2px solid #4caf4f;
+  box-sizing: border-box;
+  z-index: 2;
+  flex-shrink: 0;
+}
+.buttonGlassInner {
+  width: 0.5rem;
+  right: 8.625rem;
+  z-index: 3;
+}
+.rectangleParent {
+  cursor: pointer;
+  border: 0;
+  padding: 1.125rem 1.937rem 1.187rem 2rem;
+  background-color: #4caf4f;
+  border-radius: 34px;
+  display: flex;
+  align-items: flex-start;
+}
+.rectangleParent:hover {
+  background-color: #339636;
+}
+.frameChild,
+.header7 {
+  position: relative;
+  flex-shrink: 0;
+}
+.frameChild {
+  height: 3.5rem;
+  width: 6.375rem;
+  border-radius: 34px;
+  background-color: #4caf4f;
+  display: none;
+}
+.header7 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Urbanist;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+.rectangleGroup {
+  border-radius: 24px;
+  /* background: linear-gradient(
+    219.2deg,
+    rgba(52, 55, 63, 0.4),
+    rgba(17, 59, 33, 0.69) 49.52%,
+    #005621
+  ); */
+  background: linear-gradient(30deg, #005621 10%, rgba(0, 0, 0, 0.7) 50%);
+  /* background: linear-gradient(
+    20deg,
+    #005621 0%,
+    #113b21 20%,
+    rgba(52, 55, 63, 0.4) 50%
+  ); */
+  z-index: 2;
+  max-width: 100%;
+}
+.rectangleGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 9.125rem 9.75rem 8.937rem 6.062rem;
+  box-sizing: border-box;
+  gap: 1rem;
+}
+.frameItem {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+  /* flex-shrink: 0; */
+}
+.header8,
+.headerWrapper {
+  align-self: stretch;
+  flex-shrink: 0;
+}
+.header8 {
+  position: relative;
+  line-height: 5rem;
+  z-index: 1;
+  text-align: left;
+}
+.headerWrapper {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 3.75rem 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: 2rem;
+  font-family: Urbanist;
+}
+.header9 {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+  text-align: left;
+}
+
+.btn1st {
+  background-color: #7fc241;
+  border-radius: 30px;
+  cursor: pointer;
+  height: 50px;
+  /* width: 170px; */
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* transition: all 0.2s; */
+}
+.btn1st:hover {
+  background: linear-gradient(90deg, #7fc241, #00a046);
+}
+.btn2nd {
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  height: 50px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.btn2nd:hover {
+  border: 1px solid #7fc241;
+}
+.appIcon {
+  transition: color 0.2s ease-in-out;
+}
+.btn2nd:hover .appIcon {
+  color: #7fc241 !important;
+}
+
+.para {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  font-family: Geist;
+}
+.para2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  font-family: Geist;
+}
+
+.btn2nd:hover .para2 {
+  color: #7fc241;
+}
+
+.arrowIcon {
+  width: 12px;
+  transition: transform 0.2s ease-in-out;
+  /* height: 20px; */
+}
+.btn1st:hover .arrowIcon {
+  transform: rotate(45deg);
+}
+@media screen and (max-width: 1300px) {
+  .rectangleGroup {
+    padding-left: 5rem;
+    padding-right: 4.875rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .headerWrapper {
+    padding-left: 1.813rem;
+    padding-right: 1.875rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .frameParent {
+    gap: 1.5rem;
+  }
+  .rectangleGroup {
+    padding: 5.938rem 2.438rem 5.813rem 2.5rem;
+    box-sizing: border-box;
+  }
+  .header8 {
+    font-size: 3.688rem;
+    line-height: 4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header8 {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
+  .header9 {
+    font-size: 1.188rem;
+  }
+}

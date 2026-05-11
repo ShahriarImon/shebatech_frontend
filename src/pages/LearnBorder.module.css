@@ -1,0 +1,166 @@
+/* 
+   =========================================
+   CSS ROTATING BORDER - STEP BY STEP
+   =========================================
+*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #1a1b1f; /* Dark background */
+  color: white;
+  font-family: "Urbanist", sans-serif;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #00ad4d;
+}
+.description {
+  margin-bottom: 3rem;
+  color: #a1a1a1;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* 
+   THE CARD CONTAINER
+   ------------------
+   Important: overflow: hidden is required because Layer 1 is huge!
+*/
+.learningCard {
+  width: 400px;
+  height: 250px;
+  position: relative; /* Base for pseudo-elements */
+  border-radius: 24px;
+  overflow: hidden; /* Clips the giant rotating square */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  /* DEFAULT BORDER (Static) */
+  border: 1px solid transparent;
+  background:
+    linear-gradient(#1a1b1f, #1a1b1f) padding-box,
+    /* Inner color */
+    linear-gradient(to top, #34353b 15%, #00ad4d 50%, #34353b 85%) border-box; /* Outer border */
+}
+
+.learningCard:hover {
+  /* transform: translateY(-10px); */
+  /* SWAP: Hide the static border when we want to show the moving one */
+  background:
+    linear-gradient(#1a1b1f, #1a1b1f) padding-box,
+    transparent border-box;
+}
+
+/* 
+   LAYER 1: THE ANIMATION (::before)
+   -------------------------------
+   This is a giant rotating square with a conical gradient.
+*/
+.learningCard::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250%;
+  height: 250%; /* Make it huge so corners never show */
+
+  /* conic-gradient creates the "blade" of light */
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 60deg,
+    #00ad4d 90deg,
+    /* Green point 1 */ transparent 120deg,
+    transparent 240deg,
+    #00ad4d 270deg,
+    /* Green point 2 (symmetric) */ transparent 300deg,
+    transparent 360deg
+  );
+
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 0;
+  transition: none; /* Instant off when you leave */
+  z-index: 0;
+}
+
+.learningCard:hover::before {
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Fade-in nicely */
+  animation: rotate 4s linear infinite;
+}
+
+/* 
+   LAYER 2: THE MASK (::after)
+   -------------------------
+   This sits on top of Layer 1. It is 1px smaller than the card.
+   Only the 1px gap around it lets Layer 1 shine through.
+*/
+.learningCard::after {
+  content: "";
+  position: absolute;
+  inset: 1px; /* The "magic" part: creates the 1px border hole */
+  background: #1a1b1f; /* Must match card/page background */
+  border-radius: 23px; /* Slightly smaller than outer card */
+  opacity: 0;
+  transition: none; /* INSTANT on/off to prevent green shade inside */
+  z-index: 0;
+}
+
+.learningCard:hover::after {
+  opacity: 1;
+}
+
+/* 
+   LAYER 3: THE CONTENT
+   ------------------
+   Must have z-index: 1 to be above Layer 1 and 2.
+*/
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.cardTitle {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #00ad4d;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  line-height: 1.6;
+}
+.list li {
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+.list code {
+  background: #333;
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: #ffeb3b;
+}
+
+.explanation {
+  margin-top: 3rem;
+  color: #a1a1a1;
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

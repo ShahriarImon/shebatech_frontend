@@ -1,0 +1,310 @@
+.ellipseParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  isolation: isolate;
+  max-width: 100%;
+  text-align: left;
+  font-size: 5.5rem;
+  color: #fff;
+  font-family: Geist;
+}
+.frameChild {
+  height: 13.25rem;
+  width: 26.375rem;
+  position: absolute;
+  margin: 0 !important;
+  top: -7.375rem;
+  left: -11rem;
+  filter: blur(100px);
+  border-radius: 50%;
+  background-color: rgba(128, 195, 66, 0.1);
+  z-index: 1;
+  flex-shrink: 0;
+}
+.footerDetails,
+.footerDetailsChild {
+  border-radius: 24px;
+  background: linear-gradient(111.06deg, #061609, #090909);
+}
+.footerDetails {
+  height: 36.5rem;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.footerDetailsChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.nounSkyscraper31054541 {
+  position: absolute;
+  top: 17.563rem;
+  left: 27.625rem;
+  width: 2.563rem;
+  height: 3.125rem;
+  overflow: hidden;
+  display: none;
+}
+.contentArea {
+  position: absolute;
+  top: 13.25rem;
+  left: 7.875rem;
+  width: 64.194rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5.018rem;
+  max-width: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+  color: gray;
+  font-family: Urbanist;
+}
+.linksList {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.ourServices {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  z-index: 1;
+}
+.contactInfo {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 1.25rem 0 1.312rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: 1rem;
+}
+.khawajaTower95BirUttamAkParent {
+  height: 5.794rem;
+  width: 32.625rem;
+  position: relative;
+  max-width: 100%;
+}
+.khawajaTower95 {
+  top: 4.606rem;
+  left: 0;
+}
+.dhaka,
+.groupIcon,
+.khawajaTower95 {
+  position: absolute;
+  z-index: 1;
+}
+.groupIcon {
+  top: 0;
+  left: 15.313rem;
+  width: 2.038rem;
+  height: 2.681rem;
+}
+.dhaka {
+  margin: 0;
+  top: 2.731rem;
+  left: 14.063rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Cal Sans";
+  color: #fff;
+  display: inline-block;
+  min-width: 4.5rem;
+}
+.shebaTechnologies {
+  margin: 0;
+  position: absolute;
+  top: 6.438rem;
+  left: 7.875rem;
+  font-size: inherit;
+  font-weight: 900;
+  font-family: inherit;
+  z-index: 2;
+}
+.lineParent {
+  position: absolute;
+  top: 30.125rem;
+  left: 4.063rem;
+  width: 71.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.937rem;
+  max-width: 100%;
+  font-size: 0.875rem;
+  font-family: Urbanist;
+}
+.frameItem {
+  align-self: stretch;
+  height: 0.031rem;
+  position: relative;
+  border-top: 0.5px solid #363636;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frameGroup,
+.frameParent {
+  display: flex;
+  align-items: flex-end;
+}
+.frameParent {
+  align-self: stretch;
+  justify-content: space-between;
+  gap: 1.25rem;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.frameGroup {
+  padding: 0 4rem 0 0;
+  gap: 1rem;
+}
+.ellipseGroup {
+  height: 2.438rem;
+  width: 2.438rem;
+  position: relative;
+}
+.frameInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: var(--icon-gra);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.download1Icon {
+  position: absolute;
+  top: 0.813rem;
+  left: 0.75rem;
+  width: 0.875rem;
+  height: 0.875rem;
+  z-index: 2;
+}
+.companyDeckParent,
+.frameWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.frameWrapper {
+  justify-content: flex-end;
+  padding: 0 0 0.062rem;
+}
+.companyDeckParent {
+  gap: 0.062rem;
+}
+.companyDeck {
+  position: relative;
+  font-weight: 500;
+  z-index: 1;
+}
+.copyrightNoticeWrapper,
+.mbPdf {
+  font-size: 0.75rem;
+  font-family: Geist;
+}
+.mbPdf {
+  position: relative;
+  font-weight: 300;
+  color: gray;
+  z-index: 1;
+}
+.copyrightNoticeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 0.687rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  color: var(--Text-Grey);
+}
+.copyrightNotice {
+  position: relative;
+  font-weight: 300;
+  z-index: 1;
+}
+.shebaTechnologiesLimited {
+  color: #34b649;
+}
+.legalNotice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 0.125rem;
+}
+.spaceDelimiterParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.spaceDelimiterIcon {
+  width: 2.188rem;
+  position: relative;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.cmmi2Wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 0.437rem;
+  width: 7rem;
+}
+.cmmi2Icon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+@media screen and (max-width: 1125px) {
+  .frameParent {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footerDetails {
+    height: auto;
+    min-height: 36.5rem;
+  }
+  .linksList {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+  .shebaTechnologies {
+    font-size: 2.75rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .dhaka,
+  .ourServices {
+    font-size: 1.188rem;
+  }
+  .shebaTechnologies {
+    font-size: 1.625rem;
+  }
+}

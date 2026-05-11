@@ -1,0 +1,16 @@
+.feedback .rightArrow {
+  position: absolute !important;
+  right: 4.5% !important;
+  bottom: 6.8rem !important;
+  width: 35px !important;
+  z-index: 9;
+  cursor: pointer;
+}
+.feedback .leftArrow {
+  position: absolute !important;
+  left: 85% !important;
+  bottom: 6.8rem !important;
+  width: 35px !important;
+  z-index: 9;
+  cursor: pointer;
+}
